@@ -1,5 +1,10 @@
 # logcomp-aps
 
+# INTRODUÇÃO
+
+A linguagem foi concebida para simplificar o processo de programação, reduzindo a quantidade de movimento dos dedos e sendo possível digitar com apenas uma mão.
+
+# EBNF
 ```
 PROGRAM = { STATEMENT };
 BLOCK = "{", "\n", { STATEMENT }, "}" ;
