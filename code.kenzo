@@ -1,4 +1,12 @@
 blu r_1 int
 r_1 = knln()
 poinp(r_1)
-poinp(r_1)
+blu i_1 int = 3
+blu soma int 
+soma = r_1 + i_1
+poinp(soma)
+blu k_1 int
+
+ok k_1 = 0; k_1 <= 2; k_1 = k_1 + 1 {
+	poinp(k_1)
+} 

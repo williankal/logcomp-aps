@@ -14,8 +14,8 @@ class PrePro:
         self.pre_string = pre_string
 
     def recommend_letters(self):
-        left_side = "qwertasdfzxc"
-        right_side = "poiuylkjhmnb"
+        left_side = "qwerasdfzxc"
+        right_side = "poiulkjhmnb"
         recommendation_dict = dict(zip(left_side + right_side, right_side + left_side))
         return recommendation_dict
     
@@ -60,7 +60,7 @@ class PrePro:
 
         recommend_letters = self.recommend_letters()
 
-        left_side_letters = set("qwertasdfgzxcvb")
+        left_side_letters = set("qwerasdfgzxcvb")
         dict_ocurrebces = {letter: code.count(letter) for letter in left_side_letters}
         quantidade_esquerdas = 0
 
