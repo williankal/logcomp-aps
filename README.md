@@ -27,3 +27,47 @@ NUMBER = DIGIT, { DIGIT } ;
 LETTER = ( A | ... | Z ) ;
 DIGIT = ( 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 ) ;
 ```
+
+# Tabela de símbolos trocados:
+
+| Token-Golang | GoLang-HHK |
+|--------------|------------|
+| Println       | poinp         |
+| if         | ik       |
+| else         | ilki       |
+| for         | ok       |
+|Scanln|knln|
+|var|blu| 
+|int|int|
+|string|kuinh|
+
+
+
+# Exemplos de código
+
+
+```	
+blu l int
+blu k_1 int
+l = knln()
+
+//adicionado <= e >=
+ok k_1 = 0; k_1 <= l; k_1 = k_1 + 1 {
+	poinp(k_1)
+} 
+```
+
+OUTPUT
+```
+4
+0
+1
+2
+3
+4
+```
+
+
+
+
+

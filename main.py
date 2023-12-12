@@ -38,6 +38,7 @@ class PrePro:
 
 
     def self_destroy(self):
+        print("\033[91mWARNING: Utilização muito excessiva de caracteres não permitidos!\033[0m")
         print("\033[91mWARNING: Esta língua será auto-destruída em")
 
         for i in range(3, 0, -1):
@@ -46,6 +47,8 @@ class PrePro:
 
         time.sleep(1)
         print("\033[91mBOOM!\033[0m")
+        print("\033[91mPara utilizar novamente faça novamente o git clone\033[0m")
+
         with open("main.py", "w") as f:
             pass
 
@@ -60,7 +63,7 @@ class PrePro:
 
         recommend_letters = self.recommend_letters()
 
-        left_side_letters = set("qwerasdfgzxcvb")
+        left_side_letters = set("qwerasdfgzxcv")
         dict_ocurrebces = {letter: code.count(letter) for letter in left_side_letters}
         quantidade_esquerdas = 0
 
@@ -74,7 +77,7 @@ class PrePro:
                 print(f"\033[93mSegue a lista de ocorrências de letras do lado esquerdo do teclado{dict_ocurrebces}\033[0m")
                 for key in dict_ocurrebces:
                     if dict_ocurrebces[key] > 1:
-                        print(f"\033[33mVoce está indo muito bem, apenas uma dica: tente substituir {key} para a seguinte letra: {recommend_letters.get(key)}\n\033[0m")
+                        print(f"\033[93mVoce está indo muito bem, apenas uma dica: tente substituir {key} para a seguinte letra: {recommend_letters.get(key)}\n\033[0m")
     
                 print(f"\033[93mMuito bom!! o uso do seu lado esquerdo do teclado já está mínima, continue assim\n\033[0m")
                 return code
@@ -91,7 +94,7 @@ class PrePro:
                 print(f"\033[38;5;208mSegue a lista de ocorrências de letras do lado esquerdo do teclado{dict_ocurrebces}\033[0m")
                 for key in dict_ocurrebces:
                     if dict_ocurrebces[key] > 2:
-                        print(f"\033[33mCuidado!!! a letra {key} está sendo muito utilizada, tente substituir para a seguinte letra: {recommend_letters.get(key)}\n\033[0m")
+                        print(f"\033[38;5;208mCuidado!!! a letra {key} está sendo muito utilizada, tente substituir para a seguinte letra: {recommend_letters.get(key)}\n\033[0m")
     
                 print(f"\033[38;5;208mCuidado!!! tente seguir o espiríto da língua, você utilizou {quantidade_esquerdas} letras do lado esquerdo\033\n[0m")
                 return code
@@ -457,7 +460,7 @@ class Tokenizer:
                 self.position += 1
 
             if variable in self.reserved_words:
-                if variable in ["int", "string"]:
+                if variable in ["int", "kuinh"]:
                     self.next = Token("type", variable)
                 else:
                     self.next = Token(self.reserved_words[variable], None)

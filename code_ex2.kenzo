@@ -1,0 +1,8 @@
+blu l int
+blu k_1 int
+l = knln()
+
+
+ok k_1 = 0; k_1 <= l; k_1 = k_1 + 1 {
+	poinp(k_1)
+} 
