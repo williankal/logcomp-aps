@@ -2,7 +2,10 @@
 
 # INTRODUÇÃO
 
-A linguagem foi concebida para simplificar o processo de programação, reduzindo a quantidade de movimento dos dedos e sendo possível digitar com apenas uma mão.
+A linguagem foi concebida para simplificar o processo de programação, reduzindo a quantidade de movimento dos dedos e sendo possível digitar com apenas uma mão. Nessa linguagem peculiar, conhecida como "Half-Keyboard Code" (HKK), a ênfase está na simplicidade e na eficiência na digitação, utilizando apenas metade do teclado, normalmente a metade direita, para escrever código.
+
+Embora possa parecer um desafio no início, os desenvolvedores que se adaptam ao HKK geralmente encontram um fluxo de trabalho mais eficiente, à medida que a linguagem é projetada para maximizar a produtividade com um conjunto limitado de teclas.
+
 
 # EBNF
 ```
