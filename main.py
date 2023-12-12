@@ -90,7 +90,7 @@ class PrePro:
                 print(f"\033[33mTente utilizar um menos o canto esquerdo do seu teclado, você utilizou {quantidade_esquerdas} letras do lado esquerdo\n\033[0m")
                 return code
 
-            elif quantidade_esquerdas < 23: 
+            elif quantidade_esquerdas < 30: 
                 print(f"\033[38;5;208mSegue a lista de ocorrências de letras do lado esquerdo do teclado{dict_ocurrebces}\033[0m")
                 for key in dict_ocurrebces:
                     if dict_ocurrebces[key] > 2:
@@ -99,7 +99,7 @@ class PrePro:
                 print(f"\033[38;5;208mCuidado!!! tente seguir o espiríto da língua, você utilizou {quantidade_esquerdas} letras do lado esquerdo\033\n[0m")
                 return code
 
-            elif quantidade_esquerdas < 100:
+            elif quantidade_esquerdas <= 100:
                 print(f"\033[31mSegue a lista de ocorrências de letras do lado esquerdo do teclado{dict_ocurrebces}\033[0m")
                 raise TypeError(f"\033[31mWOWWW, você utilizou {quantidade_esquerdas} letras do lado esquerdo do teclado, um uso muito alto para o código proseguir. Reescreva o código\n\033[0m")
             

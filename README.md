@@ -48,7 +48,7 @@ DIGIT = ( 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 ) ;
 
 # Exemplos de código
 
-
+INPUT
 ```	
 blu l int
 blu k_1 int
@@ -69,6 +69,36 @@ OUTPUT
 3
 4
 ```
+
+
+Ex2 -INPUT(Auxilia na contagem de letras do lado esquerdo do teclado, limite máx de 30 para conseguir rodar o código)
+
+```
+blu r_1 int
+r_1 = knln()
+blu rr_1 int
+blu rrrr_3 int
+blu rrrrrr_5 int
+blu asdasdsa int
+blu zsdaasda int
+blu adazxczcxzczczxcz int
+```
+OUPUT
+```
+Segue a lista de ocorrências de letras do lado esquerdo do teclado{'q': 0, 'c': 5, 'e': 0, 's': 5, 'a': 8, 'd': 5, 'f': 0, 'g': 0, 'z': 7, 'x': 3, 'v': 0, 'r': 14, 'w': 0}
+Traceback (most recent call last):
+  File "C:\Users\kenzo\logcomp-aps\main.py", line 760, in <module>
+    teste = Parser.run(code)
+  File "C:\Users\kenzo\logcomp-aps\main.py", line 746, in run
+    expressao_semcoment = PrePro(arquivo).filter()
+  File "C:\Users\kenzo\logcomp-aps\main.py", line 104, in filter
+    raise TypeError(f"\033[31mWOWWW, você utilizou {quantidade_esquerdas} letras do lado esquerdo do teclado, um uso muito alto para o código proseguir. Reescreva o código\n\033[0m")
+TypeError: WOWWW, você utilizou 47 letras do lado esquerdo do teclado, um uso muito alto para o código proseguir. Reescreva o código
+```
+
+###  Easter Egg
+
+A quantidade de letras do lado esquerdo utilizado podem causar que a linguagem se revolte.
 
 
 
